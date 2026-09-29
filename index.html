@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Senhas - Alura</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h1 { font-size: 1.5rem; color: #333; margin-top: 0; }
+        .input-group { margin-bottom: 20px; }
+        input { width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        .destaque { font-weight: bold; color: #1a73e8; }
+        .status { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Analisador de Senhas</h1>
+        <div class="input-group">
+            <label for="password">Digite uma senha para testar:</label>
+            <input type="text" id="password" placeholder="Ex: Alura2026!">
+        </div>
+        <div class="results">
+            <p>Comprimento: <span id="comprimento" class="destaque">0</span> caracteres</p>
+            <p>Entropia: <span id="entropia" class="destaque">0.00</span> bits</p>
+            <p>Segurança: <span id="status" class="status">Vazia</span></p>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
